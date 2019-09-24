@@ -6,9 +6,9 @@ include "..\..\src\PaymentGateway\autoloader.php";
 
 $execute = new \PaymentGateway\Executor("12345","DE6DA27F-ACFC-463B-91F7-F852FEAC256B","https://secure-dev.paycheckout.com");
 
-// ----------------------------------
+// ---------------------------------
 // Create a payment with status PAID
-// ----------------------------------
+// ---------------------------------
 
 // Prepare order
 $order = new \PaymentGateway\Model\Order\Order();
