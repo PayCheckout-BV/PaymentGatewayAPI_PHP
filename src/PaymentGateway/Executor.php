@@ -40,10 +40,10 @@ namespace PaymentGateway
 		protected $passwordKey;
 
 		/**
-		 * Summary of $terminalId
+		 * Summary of $configurationId
 		 * @var string
 		 */
-		protected $terminalId;
+		protected $configurationId;
 
 		/**
 		 * Summary of $endPoint
@@ -71,15 +71,15 @@ namespace PaymentGateway
 
 		/**
 		 * Summary of __construct
-		 * @param string $terminalId
+		 * @param string $configurationId
 		 * @param string $passwordKey
 		 * @param bool   $useLiveEnvironment
 		 */
-		function __construct($terminalId,$passwordKey,$endpoint)
+		function __construct($configurationId,$passwordKey,$endpoint)
 		{
-			$this->terminalId	= $terminalId;
-			$this->passwordKey	= $passwordKey;
-			$this->endPoint		= $endpoint;
+			$this->configurationId	= $configurationId;
+			$this->passwordKey		= $passwordKey;
+			$this->endPoint			= $endpoint;
 		}
 
 		/**
@@ -119,7 +119,7 @@ namespace PaymentGateway
 
 			// Set headers
 			$headers[] = "hash: "           . $this->calculateHash($this->passwordKey,$bodyData);
-			$headers[] = "terminalId: "     . $this->terminalId;
+			$headers[] = "configurationId: ". $this->configurationId;
 			$headers[] = "libVersion: "     . 'PHP-' . $this->getVersion();
 			$request->setHeaders($headers);
 

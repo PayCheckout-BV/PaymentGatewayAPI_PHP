@@ -48,22 +48,16 @@ namespace PaymentGateway\Model\PaymentJob
 		protected $traceReference;
 
 		/**
-		 * Summary of $terminalId
+		 * Summary of $configurationId
 		 * @var string
 		 */
-		protected $terminalId;
+		protected $configurationId;
 
 		/**
 		 * Summary of $domain
 		 * @var string
 		 */
 		protected $domain;
-
-		/**
-		 * Summary of terminalMetaData
-		 * @var string
-		 */
-		protected $terminalMetaData;
 
 		/**
 		 * Summary of $locale
@@ -251,9 +245,9 @@ namespace PaymentGateway\Model\PaymentJob
 		 * Summary of getApplicationId
 		 * @return string
 		 */
-		function getTerminalId()
+		function getConfigurationId()
 		{
-			return $this->terminalId;
+			return $this->configurationId;
 		}
 
 		/**
@@ -263,24 +257,6 @@ namespace PaymentGateway\Model\PaymentJob
 		function getDomain()
 		{
 			return $this->domain;
-		}
-
-		/**
-		 * Summary of setTerminalMetaData
-		 * @param string $value
-		 */
-		function setTerminalMetaData($value)
-		{
-			$this->terminalMetaData = $value;
-		}
-
-		/**
-		 * Summary of getApplicationMetaData
-		 * @return string
-		 */
-		function getTerminalMetaData()
-		{
-			return $this->terminalMetaData;
 		}
 
 		/**

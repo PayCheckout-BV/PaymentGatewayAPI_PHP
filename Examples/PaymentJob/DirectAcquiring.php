@@ -21,7 +21,7 @@ $postRequest->addPaymentMethod(\PaymentGateway\Model\PaymentMethod::Creditcard);
 $postRequest->addParameter(\PaymentGateway\Api\Gateway\PaymentJobs\PaymentJobParameter::cardNumber,"4000000000000002");
 $postRequest->addParameter(\PaymentGateway\Api\Gateway\PaymentJobs\PaymentJobParameter::cardExpiryMonth,"2");
 $postRequest->addParameter(\PaymentGateway\Api\Gateway\PaymentJobs\PaymentJobParameter::cardExpiryYear,"21");
-$postRequest->addParameter(\PaymentGateway\Api\Gateway\PaymentJobs\PaymentJobParameter::cardName,"Name on card");
+$postRequest->addParameter(\PaymentGateway\Api\Gateway\PaymentJobs\PaymentJobParameter::cardHolder,"{ cardHolderName: \"Name on card\" }");
 $postRequest->addParameter(\PaymentGateway\Api\Gateway\PaymentJobs\PaymentJobParameter::cardCvc,"123");
 
 

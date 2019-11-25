@@ -56,8 +56,8 @@ namespace PaymentGateway\Api\Gateway\PaymentJobs
 		const selectedPaymentMethod = 'selectedPaymentMethod';
 		//
 		// Summary:
-		//     Name on creditcard.
-		const cardName = 'cardName';
+		//     Card holder information.
+		const cardHolder = 'cardHolder';
 		//
 		// Summary:
 		//     Number on creditcard.
