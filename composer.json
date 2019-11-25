@@ -1,7 +1,7 @@
 {
-    "name": "cashflows/php_payment-gateway-api",
-    "description": "This library contains all functionality available to interface a paymentapplication like a webshop to the cashflows gateway.",
-    "keywords": [ "PSP", "PaymentServiceProvider", "Payments", "API", "Acquiring", "Creditcard", "iDEAL", "CreditCard", "PayPal" ],
+    "name": "cashflows/payment-gateway-api-php",
+    "description": "This library contains all functionality available to interface a paymentapplication like a webshop to the CashFlows gateway.",
+    "keywords": [ "CashFlows", "PSP", "PaymentServiceProvider", "Payments", "API", "Acquiring", "Creditcard", "iDEAL", "CreditCard", "PayPal" ],
     "homepage": "https://www.cashflows.com",
     "license": "Apache-2.0",
     "support": {
